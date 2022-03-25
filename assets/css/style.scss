@@ -1,3 +1,90 @@
+@import '_colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    text-transform: uppercase;
+}
+
 body{
-    background-color: #333;
+    background-color: $corPreta;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100vh;
+}
+
+header, footer{
+    text-align: center;
+    display: none;
+}
+
+#calculadora{
+    width: 450px;
+    padding: 10px;
+    height: auto;
+    background: rgb(240,234,218);
+    background: linear-gradient(157deg, rgba(240,234,218,1) 100%, rgba(184,169,146,1) 100%);
+
+
+    .aux-topo-calc{
+        padding: 5px;
+        border: 2px solid #DDD5C8;
+        border-radius: 10px;
+        .topo-calc{
+            background:url('../imagens/bkg-topo-calc.jpg') repeat;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 25px 20px;
+            padding-bottom: 10px;
+            
+    
+            .info-target{
+                font-family: Arial, Helvetica, sans-serif;
+                color: $corBranca;
+                opacity: .8;
+    
+                h2{
+                   font-size: 1.1em;
+                   margin: 5px 0 5px 0; 
+                }
+    
+                p{
+                    font-size: .8em;
+                    text-transform: uppercase;
+                    line-height: 1em;
+                }
+            }
+        }        
+    }
+
+    .medidor{
+        width: 65%;
+        .omedidor{
+            background-color: #666;
+            border: 3px solid #282F4B;
+            width: 100%;
+            height: 60px;
+            border-radius: 10px;
+
+            box-shadow: 2px -1px 19px 6px rgba(0,0,0,0.75) inset;
+            -webkit-box-shadow: 2px -1px 19px 6px rgba(0,0,0,0.75) inset;
+            -moz-box-shadow: 2px -1px 19px 6px rgba(0,0,0,0.75) inset;
+        }
+
+        p{
+            text-align: right;
+            margin-top: 10px;
+            color: #A66782;
+            font-weight: bold;
+            font-size: .85em;
+        }
+    }
 }

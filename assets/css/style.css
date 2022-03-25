@@ -1,4 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+  text-transform: uppercase;
+}
+
 body {
   background-color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+header, footer {
+  text-align: center;
+  display: none;
+}
+
+#calculadora {
+  width: 450px;
+  padding: 10px;
+  height: auto;
+  background: #f0eada;
+  background: linear-gradient(157deg, #f0eada 100%, #b8a992 100%);
+}
+
+#calculadora .aux-topo-calc {
+  padding: 5px;
+  border: 2px solid #DDD5C8;
+  border-radius: 10px;
+}
+
+#calculadora .aux-topo-calc .topo-calc {
+  background: url("../imagens/bkg-topo-calc.jpg") repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 25px 20px;
+  padding-bottom: 10px;
+}
+
+#calculadora .aux-topo-calc .topo-calc .info-target {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  opacity: .8;
+}
+
+#calculadora .aux-topo-calc .topo-calc .info-target h2 {
+  font-size: 1.1em;
+  margin: 5px 0 5px 0;
+}
+
+#calculadora .aux-topo-calc .topo-calc .info-target p {
+  font-size: .8em;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+#calculadora .medidor {
+  width: 65%;
+}
+
+#calculadora .medidor .omedidor {
+  background-color: #666;
+  border: 3px solid #282F4B;
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: 2px -1px 19px 6px rgba(0, 0, 0, 0.75) inset;
+  -webkit-box-shadow: 2px -1px 19px 6px rgba(0, 0, 0, 0.75) inset;
+  -moz-box-shadow: 2px -1px 19px 6px rgba(0, 0, 0, 0.75) inset;
+}
+
+#calculadora .medidor p {
+  text-align: right;
+  margin-top: 10px;
+  color: #A66782;
+  font-weight: bold;
+  font-size: .85em;
 }
 /*# sourceMappingURL=style.css.map */
