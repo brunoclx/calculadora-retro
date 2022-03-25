@@ -1,5 +1,16 @@
 @import '_colors.scss';
+@import '_variables.scss';
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap');
+
+@font-face {
+    font-family: 'Digital-7';
+    src:url('Digital-7.ttf.woff') format('woff'),
+        url('Digital-7.ttf.svg#Digital-7') format('svg'),
+        url('Digital-7.ttf.eot'),
+        url('Digital-7.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+}
 
 *{
     padding: 0;
@@ -34,9 +45,6 @@ header, footer{
 
 
     .aux-topo-calc{
-        padding: 5px;
-        border: 2px solid #DDD5C8;
-        border-radius: 10px;
         .topo-calc{
             background:url('../imagens/bkg-topo-calc.jpg') repeat;
             display: flex;
@@ -44,6 +52,7 @@ header, footer{
             align-items: flex-start;
             padding: 25px 20px;
             padding-bottom: 10px;
+            border-radius: $borderRadiusNormal $borderRadiusNormal 0px 0px;
             
     
             .info-target{
@@ -72,7 +81,7 @@ header, footer{
             border: 3px solid #282F4B;
             width: 100%;
             height: 60px;
-            border-radius: 10px;
+            border-radius: $borderRadiusNormal;
 
             box-shadow: 2px -1px 19px 6px rgba(0,0,0,0.75) inset;
             -webkit-box-shadow: 2px -1px 19px 6px rgba(0,0,0,0.75) inset;
@@ -85,6 +94,83 @@ header, footer{
             color: #A66782;
             font-weight: bold;
             font-size: .85em;
+        }
+    }
+
+    .encaps-display-calc{
+        padding: 25px;
+        background-color: #F6F5F3;
+        border: 2px solid #D3CBBE;
+        border-radius: 0px 0px $borderRadiusNormal $borderRadiusNormal;
+        box-shadow: 5px 5px 10px -10px rgba(0,0,0,0.75);
+
+        .aux-display-calc{
+            border: 1px solid #CFC7BA;
+            padding: 15px;
+            border-radius: $borderRadiusNormal;
+            box-shadow: 5px 5px 10px -10px rgba(0,0,0,0.75) inset;    
+    
+            .display-calc{
+                background-color: #A2B4BE;
+                border-top: 5px;
+                border-bottom: 5px;
+                border-left: 15px;
+                border-right: 15px;
+                border-color: #756C67;
+                border-style: solid;
+                box-shadow: 3px 6px 10px 0px rgba(0,0,0,0.75) inset;
+
+                padding: 10px 15px;
+                padding-top: 12px;
+
+                border-radius: 5px;
+                text-align: right;
+
+                p{
+                    font-family: 'Digital-7';
+                    font-weight: bold;
+                    font-size: 2.5em;
+                    color: $corPreta;
+                    opacity: .8;
+                    font-style: italic;
+                }
+            }
+        }        
+    }
+    
+    .linha-funcoes{
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 2px 2px 10px 10px rgba(229,218,190,.7) inset;
+        border-radius: 34px;
+        margin-top: 20px;
+        padding: 10px 15px;        
+    }
+
+    .btn{
+        margin: 0px 10px;
+        border-radius: 5px;
+        padding: 2px;
+
+        button{
+            width: 55px;
+            padding: 10px;
+            background-color: #858390;
+            border-radius: 5px;
+            color: $corBranca;
+            border: 0;
+            box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+        }
+
+        button:hover{
+            width: 55px;
+            padding: 10px;
+            background-color: #858390;
+            border-radius: 5px;
+            color: $corBranca;
+            border: 0;
+            box-shadow: 1px 1px 1px 1px rgba(0,0,0,1);
+            cursor: pointer;
         }
     }
 }
