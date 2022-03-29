@@ -26,7 +26,8 @@
 }
 
 body{
-    background-color: $corPreta;
+    background: url('https://images.pexels.com/photos/172276/pexels-photo-172276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,6 +52,7 @@ header, footer{
     background: rgb(236,229,211);
     background: linear-gradient(90deg, rgba(236,229,211,1) 0%, rgba(214,202,186,1) 51%, rgba(208,196,180,1) 100%);
 
+    box-shadow: -1px 14px 26px 1px rgba(0,0,0,0.75);
 
     .aux-topo-calc{
         .topo-calc{
@@ -143,6 +145,15 @@ header, footer{
                     opacity: .7;
                     font-style: italic;
                     letter-spacing: .09em;
+                    line-height: 0;
+                    height: 40px;
+                    padding-top: 20px;
+                }
+
+                p:before{
+                    content: '000000000';
+                    display: inline-block;
+                    opacity: .05;
                 }
             }
         }        

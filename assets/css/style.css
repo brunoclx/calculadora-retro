@@ -16,7 +16,8 @@
 }
 
 body {
-  background-color: #333;
+  background: url("https://images.pexels.com/photos/172276/pexels-photo-172276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,6 +49,8 @@ header, footer {
   background: #ece5d3;
   background: -webkit-gradient(linear, left top, right top, from(#ece5d3), color-stop(51%, #d6caba), to(#d0c4b4));
   background: linear-gradient(90deg, #ece5d3 0%, #d6caba 51%, #d0c4b4 100%);
+  -webkit-box-shadow: -1px 14px 26px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: -1px 14px 26px 1px rgba(0, 0, 0, 0.75);
 }
 
 #calculadora .aux-topo-calc .topo-calc {
@@ -148,6 +151,15 @@ header, footer {
   opacity: .7;
   font-style: italic;
   letter-spacing: .09em;
+  line-height: 0;
+  height: 40px;
+  padding-top: 20px;
+}
+
+#calculadora .encaps-display-calc .aux-display-calc .display-calc p:before {
+  content: '000000000';
+  display: inline-block;
+  opacity: .05;
 }
 
 #calculadora .linha-funcoes {
