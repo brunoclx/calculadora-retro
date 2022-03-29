@@ -36,11 +36,11 @@ function adicionar(tecla){
     }else{
         arrNumerosDigitados.push(tecla)
         switch(tecla){
-            case '*':
-                telaCalc.innerHTML += `${" X "}`
+            case ' * ':
+                telaCalc.innerHTML += `${"X"}`
             break
-            case '/':
-                telaCalc.innerHTML += `${" &#247; "}`
+            case ' / ':
+                telaCalc.innerHTML += `${"&#247;"}`
             break
             default:
                 telaCalc.innerHTML += `${tecla.trim()}`
